@@ -24,6 +24,6 @@ COPY . /code
 
 USER web
 
-ENTRYPOINT poetry run sumare:launch
+ENTRYPOINT poetry run sumare/launch.py
 
 EXPOSE 7680

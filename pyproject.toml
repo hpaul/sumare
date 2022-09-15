@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sumare"
+version = "0.1.0"
+description = "A smat plugin which summarises your litereature review"
+authors = ["Paul H <igomodo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+gradio = "^3.3"
+transformers = "^4.22.0"
+requests = "^2.28.1"
+jurigged = "^0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^1.7.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "sumare:launch"
